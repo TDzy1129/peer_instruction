@@ -1,0 +1,56 @@
+.TopNavigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px; /* Adjust the height as needed */
+    background-color: #333;
+  }
+  
+
+  
+.TopNavigationBar a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+  
+}
+
+    .TopNavigationBar a:hover {
+    color: #9c44e0; /* Change the hover color to your desired color */
+  }
+
+  .logo img {
+    height: 30px; /* Adjust the height as needed */
+    width: auto;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This will push the user links to the right side */
+
+  }
+  
+  .user a {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.menu a:hover {
+    color: #007bff;
+}

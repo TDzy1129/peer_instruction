@@ -1,0 +1,7 @@
+.ap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* 使内容在整个视口高度居中 */
+    background-color: #f4f4f9;
+}

@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+/* 顶部导航栏 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+header .logo img {
+    width: 100px;
+    height: 50px;
+}
+header .menu {
+    display: flex;
+    gap: 20px;
+}
+header .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* 横向菜单 */
+.horizontal-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.horizontal-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.horizontal-menu a:hover {
+    color: #007bff;
+}
+/* 学习资源页面顶部 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.header button {
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 检索框 */
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* 资源列表 */
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.resource-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    height: 50px;
+    transition: background-color 0.3s;
+}
+.resource-card:hover {
+    background-color: #e6f7ff;
+}
+.resource-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.resource-info {
+    display: flex;
+    flex-direction: column;
+}
+.resource-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+.resource-source {
+    color: #666;
+    font-size: 14px;
+}
+/* 资源类型颜色区分 */
+.resource-card.question-type {
+    border-left: 5px solid #ff9800; /* 橙色表示题目类型 */
+}
+.resource-card.other-type {
+    border-left: 5px solid #4caf50; /* 绿色表示其它类型 */
+}
+/* 上传文件弹窗 */
+.modal {
+    display: none; /* 初始隐藏弹窗 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.course-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+.group-list {
+    display: none; /* 初始隐藏组列表 */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.group-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.partially-selected {
+    background-color: lightgray; /* 用于部分选中状态的样式 */
+    position: relative;
+}
+.partially-selected:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px; /* 实心正方形的大小 */
+    height: 12px;
+    background-color: black; /* 实心正方形的颜色 */
+    transform: translate(-50%, -50%); /* 居中 */
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    padding-left: 20px;
+}
+.sidebar button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidebar button:hover {
+    background-color: #218838;
+}
+
+/* 设置增加题目按钮的位置 */
+.add-button-container {
+    margin-bottom: 20px; /* 设置按钮与其他内容之间的间距 */
+    display: flex;
+    justify-content: flex-end; /* 按钮右对齐 */
+}

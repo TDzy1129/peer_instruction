@@ -1,0 +1,123 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header .menu {
+    display: flex;
+    gap: 20px;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 主体内容 */
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 通知列表样式 */
+.notification-list {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+.notification {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+.notification-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.notification-sender {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.notification-preview {
+    color: #555;
+}
+
+/* 类型特定样式 */
+.teacher-notification {
+    background-color: #e0f7fa; /* 浅蓝色背景 */
+}
+
+.admin-notification {
+    background-color: #ffe0b2; /* 浅橙色背景 */
+}
+
+/* 翻页样式 */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.send-notification-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.send-notification-button:hover {
+    background-color: #0056b3;
+}
+
+.page-button {
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: white;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #e0e0e0;
+}
+
+.disabled {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #bbb;
+    cursor: not-allowed;
+}

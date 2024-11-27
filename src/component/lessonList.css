@@ -1,0 +1,62 @@
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-height: 60vh; /* 设置容器的最大高度为视口高度的80% */
+    overflow-y: auto; /* 启用垂直滚动 */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+/* 自定义滚动条样式（可选） */
+.lesson-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lesson-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.lesson-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.lesson-card {
+    width: 100%; /* 让卡片宽度随容器调整 */
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.lesson-card:hover {
+    background-color: #e6f7ff;
+}
+
+.lesson-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-description {
+    font-size: 0.7rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-code {
+    font-size: 0.6rem;
+    color: #999;
+}

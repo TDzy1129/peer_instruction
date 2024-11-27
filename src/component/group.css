@@ -1,0 +1,90 @@
+.discussion-group {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.group-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.member-list {
+    margin-left: 20px;
+}
+
+.member-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.member-list li {
+    font-size: 14px;
+    color: #333;
+}
+
+.message-board {
+    margin-bottom: 20px;
+}
+
+.messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 8px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.message .user {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.message .text {
+    color: #333;
+}
+
+.message .timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.send-message {
+    display: flex;
+    align-items: center;
+}
+
+.send-message input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.send-message button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send-message button:hover {
+    background-color: #0056b3;
+}
